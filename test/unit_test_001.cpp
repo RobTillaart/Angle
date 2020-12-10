@@ -49,7 +49,7 @@ unittest(test_constructors)
   assertEqual(4, a.tenthousand());
 
   assertEqual(-1, b.sign());
-  assertEqual(-45, b.degree());
+  assertEqual(45, b.degree());
   assertEqual(30, b.minute());
   assertEqual(0, b.second());
   assertEqual(0, b.tenthousand());
@@ -66,11 +66,11 @@ unittest(test_constructors)
   assertEqual(0, d.second());
   assertEqual(0, d.tenthousand());
 
-  assertEqual(1, b.sign());
-  assertEqual(37, b.degree());
-  assertEqual(25, b.minute());
-  assertEqual(0, b.second());
-  assertEqual(0, b.tenthousand());
+  assertEqual(1, s.sign());
+  assertEqual(37, s.degree());
+  assertEqual(25, s.minute());
+  assertEqual(0, s.second());
+  assertEqual(0, s.tenthousand());
 }
 
 unittest(test_toDouble)
@@ -88,7 +88,7 @@ unittest(test_toDouble)
   float fs = s.toDouble();
 
   assertMoreOrEqual(2, fa);
-  assertMoreOrEqual(-46, fb);
+  assertMoreOrEqual(-45, fb);
   assertEqual(0, fn);
   assertMoreOrEqual(6, fd);
   assertMoreOrEqual(38, fs);
@@ -97,7 +97,7 @@ unittest(test_toDouble)
 unittest(test_Radians)
 {
   Angle a(1, 2, 3, 4);
-  Angle b(-45, 30);
+  Angle b(-75, 30);
   Angle n(0);
   Angle d(5.25);
   Angle s("91.25");
@@ -108,10 +108,10 @@ unittest(test_Radians)
   float rd = d.toRadians();
   float rs = s.toRadians();
 
-  assertMoreOrEqual(0, ra);
+  assertMoreOrEqual(1, ra);
   assertMoreOrEqual(-1, rb);
   assertEqual(0, rn);
-  assertMoreOrEqual(0, rd);
+  assertMoreOrEqual(0.1, rd);
   assertMoreOrEqual(PI, rs);  
 }
 
