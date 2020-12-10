@@ -112,7 +112,7 @@ unittest(test_Radians)
   assertMoreOrEqual(-1, rb);
   assertEqual(0, rn);
   assertMoreOrEqual(0, rd);
-  assertMoreOrEqual(PI, rs);
+  assertMoreOrEqual(PI, rs);  
 }
 
 
@@ -162,26 +162,6 @@ unittest(test_compare)
   assertTrue(b <  a);
   assertTrue(a >  b);
   assertTrue(a >= b);
-  
-  assertNotEqual(0, x.toDouble());
-
-  x *= 2;
-  assertNotEqual(0, x.toDouble());
-  x /= 2;
-  assertNotEqual(0, x.toDouble());
-  x += 2;
-  assertNotEqual(0, x.toDouble());
-  x -= 2;
-  assertNotEqual(0, x.toDouble());
-
-  x = a * 2;
-  assertNotEqual(0, x.toDouble());
-  x = a / 2;
-  assertNotEqual(0, x.toDouble());
-  x = a + 2;
-  assertNotEqual(0, x.toDouble());
-  x = a - 2;
-  assertNotEqual(0, x.toDouble());
 }
 
 
