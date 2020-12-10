@@ -112,7 +112,7 @@ unittest(test_Radians)
   assertMoreOrEqual(-1, rb);
   assertEqual(0, rn);
   assertMoreOrEqual(0, rd);
-  assertMoreOrEqual(TWOPI, rs);
+  assertMoreOrEqual(PI, rs);
 }
 
 
