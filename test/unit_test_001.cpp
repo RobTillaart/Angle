@@ -68,7 +68,7 @@ unittest(test_constructors)
 
   assertEqual(1, s.sign());
   assertEqual(37, s.degree());
-  assertEqual(25, s.minute());
+  assertEqual(15, s.minute());
   assertEqual(0, s.second());
   assertEqual(0, s.tenthousand());
 }
