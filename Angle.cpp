@@ -1,14 +1,14 @@
 //
 //    FILE: Angle.cpp
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.8
+// VERSION: 0.1.9
 // PURPOSE: library for Angle math for Arduino
 //     URL: https://github.com/RobTillaart/Angle
 //          http://forum.arduino.cc/index.php?topic=339402
 //
-// Released to the public domain
-// 0.1.8    2020-05-27 update library.json
-// 0.1.7    2020-03-26 refactor #pragma once
+// 0.1.9    2020-12-10  Arduino ci
+// 0.1.8    2020-05-27  update library.json
+// 0.1.7    2020-03-26  refactor #pragma once
 // 0.1.06 - fixed bug negative values.
 // 0.1.05 - added AngleFormat proxy added 03/03/15 by Christoper Andrews.
 // 0.1.04 - changed thousands in tenthousands, string constructor
