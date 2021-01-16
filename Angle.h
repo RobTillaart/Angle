@@ -2,18 +2,21 @@
 //
 //    FILE: Angle.h
 //  AUTHOR: Rob dot Tillaart at gmail dot com
-// VERSION: 0.1.9
+// VERSION: 0.1.10
 // PURPOSE: angle library for Arduino
 // HISTORY: See angle.cpp
 //
 // AngleFormat proxy added 03/03/15 by Christoper Andrews.
 //
 
+
 #include "math.h"
 #include "Arduino.h"
 #include "Printable.h"
 
-#define ANGLE_LIB_VERSION "0.1.9"
+
+#define ANGLE_LIB_VERSION "0.1.10"
+
 
 class Angle;
 
