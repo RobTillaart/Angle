@@ -8,6 +8,7 @@
 
 Arduino library for basic math for Angles in degrees, minute, seconds and tenthousands.
 
+
 ## Description
 
 Angle is an Arduino class to print, compare and do basic math with angles
@@ -18,12 +19,48 @@ or radians.
 To make the library more useful basic math ( + - \* / ) 
 and comparisons ( == != < <= > >= ) are added to the class.
 
+The library implements the Printable interface, allowing one to call
+
+**Serial.println(angle)**  or **SD.print(angle)**
+
+
 ## Interface
 
-There are three constructors
-- **Angle(int dd=0, int mm=0, int ss=0, int tt=0)**
-- **Angle(double alpha)**
-- **Angle(char \* str)**       // str represents a double as string e.g. "45.31234"
+### Constructors
+
+- **Angle(int dd=0, int mm=0, int ss=0, int tt=0)** create an Angle, default is zero.
+- **Angle(double alpha)** create an Angle from a double.
+- **Angle(char \* str)** creat an Angle from a string e.g. "45.31234".
+
+
+### base
+
+- **int sign()** returns -1 or 1
+- **int degree()** returns # degrees
+- **int minute()** returns # minutes
+- **int second()** returns # seconds
+- **int tenthousand()** returns # tenthousands of a second
+
+
+### Conversions
+
+- **toDouble()** returns the angle as a double (float)
+- **toRadians()** retuns the angle in radians (0..TWO_PI)
+- **fromRadian()** 
+
+
+### Equality operators
+
+The library supports equality operator "==", "!=", "<" "<=" ">" and ">="
+
+
+### Math operators
+
+- **negate**  -angle
+- **addition** and **subtract** add angles to angles
+- **multiplication** and **division** multiply an angle with a double
+- **ratio**  ratio = Angle/Angle;
+
 
 ## Operation
 
@@ -31,5 +68,6 @@ See examples
 
 
 ## Note
+
 The library has not been tested extensively and it could still contain
 bugs. Especially the constructor does not check input so use it carefully.
