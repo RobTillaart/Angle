@@ -15,7 +15,7 @@
 #include "Printable.h"
 
 
-#define ANGLE_LIB_VERSION 		(F("0.1.11"))
+#define ANGLE_LIB_VERSION               (F("0.1.11"))
 
 
 class Angle;

@@ -23,5 +23,6 @@
   "version": "0.1.11",
   "license": "MIT",
   "frameworks": "arduino",
-  "platforms": "*"
+  "platforms": "*",
+  "headers": "Angle.h"
 }
