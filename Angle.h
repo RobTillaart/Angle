@@ -40,7 +40,7 @@ class Angle: public Printable
 public:
     Angle(int dd = 0, int mm = 0, int ss = 0, int tt = 0);
     Angle(double alpha);
-    Angle(char * str);
+    Angle(const char * str);
 
     int sign()        { return neg ? -1 : 1; };
     int degree()      { return d; };

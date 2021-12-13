@@ -82,13 +82,13 @@ Angle::Angle(const double alpha)
 }
 
 
-Angle::Angle(char * str)
+Angle::Angle(const char * str)
 {
     uint32_t yy = 0;
     uint8_t d_cnt = 0;
     neg = false;
     // parse whole degrees
-    char *p = str;
+    char *p = (char *) str;
     d = 0;
     // skip crap
     while (!isdigit(*p) && (*p != '-')) p++;
